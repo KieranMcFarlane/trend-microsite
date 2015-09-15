@@ -1872,12 +1872,13 @@ footer h2{
   letter-spacing: 0.8em;
   text-align: center;
   margin-left: 0.8em;
+  margin-top: 1.125rem;
 }
 
 .verb-logo{
     display: block;
     text-align: center;
-    padding-bottom: 2.125rem;
+    padding-bottom: 1.125rem;
 
 }
 
