@@ -2,35 +2,28 @@
 (function($) { 
   $(document).ready(function(){
 
-    var $body = $('body'),
-        $trigger = $('#main'),
-        $menu = $('#menu');
-        $window = $(window),
-        stickyactive = false, 
-        triggeroffset = $trigger.offset().top;
-    
-    $window.scroll(function(){   
-        // console.log($(this).scrollTop(), $main.offset().top);
+     // Scroll Top
+    scrolled = false;
+	$(window).scroll(function() {
+		scrolled = true;
+	})
+	setInterval(function() {
+		if (scrolled) {
+			scrolled = false;
+			if (0 >= (scrollTop = $(this).scrollTop())) {
+				$('body').removeClass('sticky');
+				$('#menu').removeClass('sticky');
+			} else {
+				$('body').addClass('sticky');
+				$('#menu').addClass('sticky');
+			}
+		}
+	}, 250);
 
-       if ($window.scrollTop() > triggeroffset && !stickyactive) {
-          $menu.addClass('sticky');
-          $body.addClass('sticky');
-          stickyactive = true;
-          return;
-       }
-       if($window.scrollTop() < triggeroffset && stickyactive){
-          $menu.removeClass('sticky');
-          $body.removeClass('sticky');
-          stickyactive = false;
-          return;
-       }
-    });
-
-          $window.resize(function() {
+          $(window).resize(function() {
     var extra = $('.strip-parent').height() * Math.tan(20);
     // $('.strip-parent > .strip').css('left', extra / 2);
     $('.strip-parent > .strip > .bg-img').css('left', -(extra / 2)).width('calc(100% + ' + extra + 'px');
-      triggeroffset = $trigger.offset().top;
       }).resize();
 
   });
@@ -97,18 +90,6 @@ inviteButton.magnificPopup({
 
     e.preventDefault();
   });
-
-  /*
-   * Scroll to
-   */
-
-   $(".scroll-to-next-event").click(function (e){
-        $('html, body').animate({
-            scrollTop: $(".next-event").offset().top
-        }, 1300);
-
-        e.preventDefault();
-    });
 
 
    /*
