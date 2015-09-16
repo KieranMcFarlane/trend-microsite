@@ -21,10 +21,14 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+<<<<<<< HEAD
 	<script src="morph/js/classie.js"></script>
 	<script src="morph/js/uiMorphingButton_inflow.js"></script>
 	<script src="js/menu.js"></script>
 
+=======
+	<script src="js/menu.js"></script>
+>>>>>>> form-function
 </head>
 <body>	
 	<nav role="navigation" class="nav" itemscope itemtype='https://schema.org/SiteNavigationElement'>
@@ -59,6 +63,7 @@
 			</li></div>
 		</div>
 	<!--        This is what will show in the full screen Nav-->
+<<<<<<< HEAD
 		<div class="navmenu-outer">
 			<div class="navmenu-container">
 				<ul id="opennav" class="navmenu">
@@ -72,10 +77,26 @@
 			</ul>
 			</div>
 		</div>
+=======
+			<div class="navmenu-outer">
+				<div class="navmenu-container">
+					<ul id="opennav" class="navmenu">
+						<li><a href="#intro" class="active">Intro</a></li>
+						<li><a href="#next-event">Next Event</a></li>
+						<li><a href="#why-trend">Why Trend</a></li>
+						<li><a href="#speakers">Speakers</a></li>
+						<li><a href="#the-venue">The Venue</a></li>
+						<!--<li><a href="#latest-news">Latest News</a></li>-->
+						<li><a href="#our-partners">Our Partners</a></li>
+					</ul>
+					</div>
+				</div>
+			</div>
+>>>>>>> form-function
 		</div>
 	</nav>
 
-<header class="clearfix" role='banner' itemscope itemtype='https://schema.org/WPHeader'>
+<header class="clearfix" id="intro" role='banner' itemscope itemtype='https://schema.org/WPHeader'>
 
 <div class="strip-parent">
   		<div class="strip">
@@ -88,13 +109,13 @@
 		<img src="img/Trend-top.png" alt="" class="logo">
 		<p>A collection of events to inspire luxury &amp; lifestyle brands and cultivate digital excellence.  
 </p>
-		<a href="#" class="scroll-to-next-event button">Our Next Event</a>
+		<a href="#next-event" class="button">Our Next Event</a>
 
 	</div>
 </header>
 
 <section role="main" class="clearfix">
-	<section class="next-event clearfix">
+	<section class="next-event clearfix" id="next-event">
 		<div class="wrap">
 			<div class="title-side">
 				<h2 class="side-header">Next Upcoming Event</h2>
@@ -114,30 +135,32 @@
 
 				<div class="popup-content content-style-form content-style-form-1 mfp-hide">
 					<!-- <span class="mfp-close"><img src="img/close.png"/></span> -->
-					<form>
+					<form action="http://verbbrands.us11.list-manage.com/subscribe/post" method="POST">
+                        <input type="hidden" name="u" value="1f39308beca25e3fb5dd84696">
+                        <input type="hidden" name="id" value="3a444e2162">
 						<div class="clearfix"></div>
 						<div class="group">
 							<h3>Request an Invite</h3>
 						</div>
 
 						<div class="group">
-							<label for="Name">Name</label><input type="text" name="first">
+							<label for="Name">Name</label><input type="text" name="MERGE1" id="MERGE1">
 						</div>
 
 						<div class="group">
-							<label for="Email">Email</label><input type="email" name="email">
+							<label for="Email">Email</label><input type="email" name="MERGE0" id="MERGE0">
 						</div>
 
 						<div class="group">
-							<label for="company">company</label><input type="text" name="company">
+							<label for="company">company</label><input type="text" name="MERGE2" id="MERGE2">
 						</div>
 
 						<div class="group">
-							<label for="job title">job title</label><input type="text" name="job">
+							<label for="job title">job title</label><input type="text" name="MERGE3" id="MERGE3">
 						</div>
 
 						<div class="group">
-							<input disabled type="submit" value="send request" name="sub">
+							<input type="submit" value="send request" name="submit">
 						</div>
 						<div class="clearfix"></div>
 			        </form>
@@ -156,9 +179,9 @@
 					<div class="list">
 						<ul>
 							<li>18:30 - Networking and Drinks</li>
-							<li>19:30 - Chris Donnelly, MD at Verb Brands</li>
-							<li>20:00 - Joe Davine, Head of Marketing at Verb Brands</li>
-							<li>20:30 - Steve Jobs, Deceased</li>
+							<li>19:30 - Chris Donnelly, Verb Brands</li>
+							<li>20:00 - Michelle De Conto, British Fashion Council</li>
+							<li>20:30 - To Be Announced</li>
 							<li>21:00 - Networking and Drinks</li>
 						</ul>
 					</div>
@@ -168,7 +191,7 @@
 		</div>
 	</section>
 
-	<section class="why-trend clearfix">
+	<section class="why-trend clearfix" id="why-trend">
 		<div class="wrap">
 			<div class="why-trend-title">
 			<h2>Why</h2>
@@ -180,14 +203,15 @@
 			</p>
 		</div>
 	</section>
-		<section class="speakers clearfix">
+		<section class="speakers clearfix" id="speakers">
 			<div class="bg-white"></div>
 			<div class="wrap">
 				<h2>Speakers</h2>
 				<div class="speaker-block">
 					<div class="circle"></div>
-					<h2>Christopher Donnelly</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<h2>Chris Donnelly</h2>
+					<p>Chris is the Founder of <a href="http://www.verbbrands.com" target="_blank">Verb Brands</a>, a Digital Agency that specialises in building websites and mobile applications for luxury brands.</p>
+                    <p>Chris has worked with international brands such as Sunseeker Brokerage, Tossed Salads and Larsson & Jennings.</p>
 	            	<li ><a class="twitter-pos" href="https://twitter.com/donnelcs" target="_blank"><i class="fa fa-twitter"></i>
 </a></li>
 					<li><a class="" href="https://uk.linkedin.com/in/donnellychris" target="_blank"><i class="fa fa-linkedin"></i>
@@ -195,10 +219,10 @@
 				</div>
 				<div class="speaker-block">
 					<div class="circle-2"></div>
-					<h2>Joe Davine</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-	</p>
-	            	<li><a class="twitter-pos" href="https://twitter.com/JoeDavineUK?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i>
+					<h2>Michelle De Conto</h2>
+					<p>Michelle is a Business Advisor and Brand Consultant for The British Fashion Council.</p>
+                    <p>Michelle has worked with large brands such as LVMH, Lacoste, Prada, Dolce & Gabbana, Burberry, Ray-Ban, Luxottica, Oakley and more.</p>
+	            	<li><a class="twitter-pos" href="https://twitter.com/DeContoMichelle" target="_blank"><i class="fa fa-twitter"></i>
 </a></li>
 	            	<li><a class="" href="https://uk.linkedin.com/in/joedavine" target="_blank"><i class="fa fa-linkedin"></i>
 </a></li>
@@ -206,15 +230,20 @@
 				<div class="speaker-block">
 					<div class="circle-3"></div>
 					<h2>To Be Announced</h2>
+<<<<<<< HEAD
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
 	            	<li><a class="twitter-pos" href="#"><i class="fa fa-twitter"></i>
+=======
+					<p>Our third speaker is to be announce shortly - If you are interested in speaking for any future trend events, please <a href="mailto:joe@verbbrands.com">contact us here</a>.</p>
+	            	<li><a class="twitter-pos" href="https://twitter.com/trendmaguk" target="_blank"><i class="fa fa-twitter"></i>
+>>>>>>> form-function
 </a></li>
 					<li><a class="" href="#"><i class="fa fa-linkedin"></i>
 </a></li>
 				</div>
 			</div>
 		</section>
-	<section class="venue clearfix">
+	<section class="venue clearfix" id="the-venue">
 		<div class="wrap">
 			
 			<div class="bg-strip">
@@ -239,7 +268,7 @@
 	</section>
 
 
-	<section class="news hidden">
+	<section class="news hidden" id="latest-news">
 		<div class="wrap clearfix">
 			<div class="blogwrap-title">
 			<h2>Latest Trend News</h2>
@@ -249,7 +278,7 @@
         </div>
 	</section>
 
-	<section class="our-partners">
+	<section class="our-partners" id="our-partners">
 		<div class="wrap">
 			<h2>Our Partners</h2>
 			<div class="partner-img">
@@ -266,9 +295,11 @@
 	<section class="subscribe">
 		<div class="wrap">
 			<h2>Stay on Trend</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-			<form> 
-				<input type="email" placeholder="Email Address" name="email">
+			<p>Keep updated with the latest luxury industry news and expertise with the Trend newsletter.  Enter your email address below to stay ahead of the curve.</p>
+			<form action="http://verbbrands.us11.list-manage.com/subscribe/post" method="POST">
+                <input type="hidden" name="u" value="1f39308beca25e3fb5dd84696">
+                <input type="hidden" name="id" value="3a444e2162"> 
+				<input type="email" placeholder="Email Address" name="MERGE0" id="MERGE0">
 			</form>
 		</div>
 	</section>
