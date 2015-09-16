@@ -1298,7 +1298,7 @@ header .button {
 /*Map Styles*/
 
 .venue .map {
-  background: black url('../img/venue-map.png') no-repeat;
+  background: black url('../img/venue-map3.png') no-repeat;
   background-size: cover;
 
   color: white;
@@ -1308,13 +1308,14 @@ header .button {
   position: absolute;
   top: 0;
   right: -51%;
-  
+/*  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);*/
   z-index: 2010;
 
   transition: all 800ms cubic-bezier(0.66, 0.29, 0.33, 1.02);
 }
 
-.venue .map::after {
+/*.venue .map::after {
   content: "";
   background: url('../img/venue-pointer.png') no-repeat;
   background-size: contain;
@@ -1330,7 +1331,7 @@ header .button {
   margin-top: -4rem;
   margin-right: -2.5rem;
   
-}
+}*/
 
 .venue .map.open {
     right: 0;
@@ -1377,102 +1378,239 @@ header .button {
 
 @media (max-width: 2325px){
   .venue .map::after {
-    top: 48%;
-    right: 62%;
+    top: 55%;
+    right: 52.8%;
 }
 }
 
-@media (max-width: 2325px){
+
+@media (max-width: 2241px){
   .venue .map::after {
-    top: 48%;
-    right: 62%;
+    top: 54%;
+    right: 52.8%;
 }
 }
 
-@media (max-width: 2184px){
+@media (max-width: 2196px){
   .venue .map::after {
-    top: 46%;
-    right: 62%;
+    top: 53%;
+    right: 52.8%;
 }
 }
 
-@media (max-width: 2104px){
+@media (max-width: 2182px){
   .venue .map::after {
-    top: 43%;
-    right: 62%;
+    top: 53%;
+    right: 52.8%;
 }
 }
 
-@media (max-width: 1850px){
+@media (max-width: 2155px){
   .venue .map::after {
-    top: 43%;
-    right: 59%;
+    top: 53%;
+    right: 52.8%;
 }
 }
 
-@media (max-width: 1828px){
+@media (max-width: 2088px){
   .venue .map::after {
-    top: 43%;
-    right: 58%;
+    top: 50%;
+    right: 52.8%;
 }
 }
 
-@media (max-width: 1673px){
+@media (max-width: 2047px){
   .venue .map::after {
-    top: 42%;
-    right: 54%;
+  top: 48%;
+  right: 52.8%;
 }
 }
 
-@media (max-width: 1551px){
+@media (max-width: 1970px){
   .venue .map::after {
-    top: 42%;
-    right: 50%;
+    top: 47%;
+    right: 52.8%;
 }
 }
 
-@media (max-width: 1429px){
+@media (max-width: 1938px){
   .venue .map::after {
-    top: 42%;
-    right: 46%;
+    top: 47%;
+    right: 51.8%;
 }
 }
 
-@media (max-width: 1230px){
+@media (max-width: 1927px){
   .venue .map::after {
-    top: 42%;
-    right: 42%;
+    top: 47%;
+    right: 51.8%;
 }
 }
 
-@media (max-width: 1130px){
+@media (max-width:1913px){
   .venue .map::after {
-    top: 43%;
-    right: 38%;
+    top: 47.8%;
+    right: 50.8%;
 }
 }
 
-@media (max-width: 1023px){
+@media (max-width: 1881px){
   .venue .map::after {
-    top: 45%;
-    right: 32%;
+  top: 47.7%;
+   right: 50.5%;
 }
 }
 
-@media (max-width: 883px){
+@media (max-width: 1852px){
   .venue .map::after {
-    top: 43%;
-    right: 28%;
+    top: 47.7%;
+    right: 49.3%;
 }
 }
 
-@media (max-width: 874px){
+@media (max-width: 1811px){
+  .venue .map::after {
+    top: 47.8%;
+    right: 48.2%;
+}
+}
+
+
+@media (max-width: 1769px){
+  .venue .map::after {
+    top: 47.8%;
+    right: 46.8%;
+}
+}
+
+
+@media (max-width: 1725px){
+  .venue .map::after {
+    top: 47.8%;
+    right: 45.5%;
+}
+}
+
+
+@media (max-width: 1688px){
+  .venue .map::after {
+    top: 47.8%;
+    right: 44.3%;
+}
+}
+
+@media (max-width: 1647px){
+  .venue .map::after {
+    top: 47.2%;
+    right: 43.2%;
+}
+}
+
+@media (max-width: 1628px){
+  .venue .map::after {
+    top: 47.9%;
+    right: 42.2%;
+}
+}
+
+@media (max-width: 1587px){
+  .venue .map::after {
+    top: 47.8%;
+    right: 40.6%;
+}
+    
+}
+
+@media (max-width: 1541px){
+  .venue .map::after {
+    top: 47.9%;
+    right: 38.9%;
+}
+}
+
+@media (max-width: 1504px){
+  .venue .map::after {
+    top: 47.9%;
+    right: 37.2%;
+}
+}
+
+@media (max-width: 1463px){
+  .venue .map::after {
+    top: 47.9%;
+    right: 35.4%;
+}
+}
+
+@media (max-width: 1424px){
+  .venue .map::after {
+    top: 47.9%;
+    right: 33.8%;
+}
+}
+
+@media (max-width: 1428px){
+  .venue .map::after {
+    top: 47.7%;
+    right: 34.1%;
+}
+}
+
+@media (max-width: 1391px){
+  .venue .map::after {
+    top: 47.7%;
+    right: 32.3%;
+}
+}
+
+@media (max-width: 1373px){
+  .venue .map::after {
+    top: 47.7%;
+    right: 36.5%;
+}
+}
+
+@media (max-width: 1430px){
   .venue .map::after {
      top: 43%;
     right: 25%;
 }
 }
 
+@media (max-width: 1428px){
+  .venue .map::after {
+    top: 47.7%;
+    right: 35.9%;
+}
+}
+
+@media (max-width: px){
+  .venue .map::after {
+     top: 43%;
+    right: 25%;
+}
+}
+
+@media (max-width: px){
+  .venue .map::after {
+     top: 43%;
+    right: 25%;
+}
+}
+
+@media (max-width: px){
+  .venue .map::after {
+     top: 43%;
+    right: 25%;
+}
+}
+
+@media (max-width: px){
+  .venue .map::after {
+     top: 43%;
+    right: 25%;
+}
+}
 
 /*Whole Map Breakpoints*/
 
@@ -1872,12 +2010,13 @@ footer h2{
   letter-spacing: 0.8em;
   text-align: center;
   margin-left: 0.8em;
+  margin-top: 1.125rem;
 }
 
 .verb-logo{
     display: block;
     text-align: center;
-    padding-bottom: 2.125rem;
+    padding-bottom: 1.125rem;
 
 }
 
