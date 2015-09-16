@@ -1283,6 +1283,16 @@ header .button {
   }
 }
 
+html:not(.no-mobile) .venue .bg-strip .strip-parent > .strip > .bg-img {
+  background-attachment: scroll;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.1) {
+body .venue .bg-strip .strip-parent > .strip > .bg-img {
+    background-attachment: scroll;
+  }
+}
+
 @media (max-width: 25rem) {
 
 .venue-subinfo .side-header{
