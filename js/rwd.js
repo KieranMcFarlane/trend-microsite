@@ -1,4 +1,8 @@
-  //Stripes jQuery
+//@prepros-prepend jquery-2.1.4.min.js
+//@prepros-prepend jquery.magnific-popup.min.js
+//@prepros-prepend jquery-ui.min.js
+//@prepros-prepend menu.js
+//@prepros-prepend modernizr.js
 (function($) { 
   $(document).ready(function(){
 
