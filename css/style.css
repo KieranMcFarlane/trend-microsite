@@ -203,6 +203,14 @@ li.navmenu{
       font-weight: 700;
 }
 
+.navmenu .fa::before {
+  content: "\f0c9";
+}
+
+.show-menu .navmenu .fa::before {
+  
+}
+
 nav li a{
   font-family: 'Playfair Display', serif;
   font-size: 1.25rem;
